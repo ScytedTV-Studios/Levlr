@@ -137,10 +137,10 @@ function saveUserData(userData) {
           data[userIndex].level++;
           data[userIndex].xp -= xpRequiredForNextLevel;
           xpRequiredForNextLevel = calculateXpRequiredForNextLevel(data[userIndex].level);
-          const channel = client.channels.cache.get(message.channelId);
-          if (channel) {
-            channel.send(`${userData.username} leveled up to level ${data[userIndex].level}!`);
-          }
+          // const channel = client.channels.cache.get(message.channelId);
+          // if (channel) {
+          //   channel.send(`${userData.username} leveled up to level ${data[userIndex].level}!`);
+          // }
         }
       } else {
         userData.level = 1;
