@@ -81,7 +81,7 @@ client.on('interactionCreate', async (interaction) => {
 });
 
 client.on('messageCreate', async (message) => {
-  if (message.author.bot) return; // Ignore messages from bots
+  // if (message.author.bot) return; // Ignore messages from bots
 
   // Handle leveling logic here
   const userId = message.author.id;
