@@ -4,7 +4,7 @@ const csv = require('csv-parser');
 function getUserDataFromCSV(userId) {
   return new Promise((resolve, reject) => {
     // Specify the absolute path to the CSV file
-    const csvFilePath = __dirname + '/../userdata.csv';
+    const csvFilePath = __dirname + '/../../api/levlr/userdata.csv';
 
     // Load existing data from the CSV file
     const data = [];
